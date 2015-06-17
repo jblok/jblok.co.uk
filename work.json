@@ -1,0 +1,124 @@
+[
+  {
+    "name": "vinemasher",
+    "title": "Vine Masher",
+    "url": "http://www.vinemasher.com",
+    "short_description": "Turning the famous 6 second video into a new format. Complete web app build using MEAN stack.",
+    "description": "<p>Vine Masher is a platform which allows users to stitch together up to 9 seperate vine videos, and trim their start and end times to create a longer, (hopefully) more engaging video. This was a proof of concept project we built at Super natural, but nonetheless it was covered by <a target='_blank' href='http://thenextweb.com/insider/2015/02/02/vine-masher-lets-you-create-easily-shareable-playlists/'>The Next Web</a> and featured on <a target='_blank' href='http://www.producthunt.com/posts/vine-masher'>Product Hunt</a>!</p><p>This app uses AngularJS for the front end javascript framework and LESS as the CSS preprocessor. It taps into the Vine API to request videos from Vine, which users can then drag and drop onto their stage. Users can then authenticate via the Twitter API to create a Vine Masher account and save their Mash.</p><p>Additionally, this app exposes it's own API running on NodeJS with a Mongo database, which deals with user authentication and getting or saving mashes. I was also responsible for the server set up and admininstration on Digital Ocean.</p>",
+    "date": "February 2015",
+    "skills": [
+      "AngularJS",
+      "LESS",
+      "NodeJS",
+      "Mongo DB",
+      "Grunt",
+      "Vine API",
+      "Twitter API"
+    ],
+    "photos": [
+      "images/fulls/vinemasher1.png",
+      "images/fulls/vinemasher2.png"
+    ],
+    "thumbnail_photo": "images/thumbs/vinemasher.jpg"
+  },
+
+  {
+    "name": "wmcu",
+    "title": "Wrap My Chicks Up",
+    "url": "http://www.wrapmychicksup.com",
+    "short_description": "An easter themed HTML5 fully responsive game.",
+    "description": "<p>This was an HTML5 game we produced at Super natural for Easter. The game is fully responsive and works on all devices, even down to Android 2.3 and IE8! This was a major requirement of the project as we wanted to push the boundaries of the browser and see what could be produced in an HTML only environment.</p><p>The game preloads efficiently and utilises best practices including concatenation, minification, image compression, and has an automated build and deployment system using Grunt.</p>",
+    "date": "April 2014",
+    "skills": [
+      "HTML5",
+      "CSS",
+      "Javascipt",
+      "Responsive Web Design"
+    ],
+    "photos": [
+      "images/fulls/wmcu1.png",
+      "images/fulls/wmcu2.png"
+    ],
+    "thumbnail_photo": "images/thumbs/wmcu.png"
+  },
+
+  {
+    "name": "supernatural",
+    "title": "Super natural website",
+    "url": "http://www.wearesupernatural.com",
+    "short_description": "Upgrade and redesign of existing company wordpress site.",
+    "description": "<p>This is the long description</p>",
+    "date": "September 2014",
+    "skills": [
+      "Initial load weight reduced from over 1mb to 300kb",
+      "Wordpress",
+      "HTML5",
+      "CSS",
+      "Javascript / jQuery",
+      "Responsive Web Design"
+    ],
+    "photos": [
+      "images/fulls/supernatural1.png"
+    ],
+    "thumbnail_photo": "images/thumbs/supernatural.png"
+  },
+
+  {
+    "name": "ig",
+    "title": "IG.com",
+    "url": "http://www.ig.com",
+    "short_description": "Ongoing development of new features and improvements.",
+    "description": "<p>When I worked at IG, a financial spread betting company, my primary task was assisting in the development of the company website. This site ran on a Adobe CQ5, an enterprise level Content Management System. The goal was to make the site editable by different stakeholders and be super fast to load.</p><p>We employed a lot of techniques to ensure optimal load times, such as defferring scripts, minifying and concatenating scripts and styles, caching resources, etc. The site looks different now, but check it out anyway!</p>",
+    "date": "2013",
+    "skills": [
+      "Adobe CQ5/AEM",
+      "Javascript / jQuery",
+      "LESS",
+      "Unit Testing (Jasmine)"
+    ],
+    "thumbnail_photo": "images/thumbs/ig.png"
+  },
+
+  {
+    "name": "sitchuu",
+    "title": "sitchuu",
+    "short_description": "Final year university project. Web app to find and sort events in your area.",
+    "description": "<p>Sitchuu was my final year university project. It's no longer with us unfortunately, but it showed users the events happening around them, at that moment, and in the future. The aim was to make this a place for breaking news and rapidly developing events, but also somewhere to share events with different groups of people you know, thanks to granular privacy controls and social elements such as check ins and following.</p><p>It was a PHP application that ran on a MySQL database, and incorporated many front end features, such as using the Google Maps API, Twitter Bootstrap, jQuery and used AJAX entensively.</p>",
+    "date": "2012",
+    "skills": [
+      "OO PHP",
+      "MySQL",
+      "Javascript / jQuery",
+      "Google Maps API"
+    ],
+    "photos": [
+      "images/fulls/sitchuu1.png",
+      "images/fulls/sitchuu2.png",
+      "images/fulls/sitchuu3.png",
+      "images/fulls/sitchuu4.png",
+      "images/fulls/sitchuu5.png",
+      "images/fulls/sitchuu7.png"
+    ],
+    "thumbnail_photo": "images/thumbs/sitchuu.png"
+  },
+
+  {
+    "name": "tourtofrance",
+    "title": "Tour To France",
+    "short_description": "A little web app to track the route and fundraising total of a charity bike ride I did",
+    "description": "<p>In March 2012, I led a charity bike ride from Leeds to Paris, and created this website so people could track our progress, and see our fundraising total (which comes from JustGiving's API).</p><p>It features our route loaded as KML files onto a google map, and pulls in tweets using the hashtag #ragttf. Unfortunately I never cached the tweets, and Twitter only serves them for 6-9 days, but during the bike ride, there were over 200 tweets, and 3000 unique visits.</p>",
+    "date": "2012",
+    "skills": [
+      "Javascript / jQuery",
+      "Twitter API",
+      "Google Maps API",
+      "Justgiving API"
+    ],
+    "photos": [
+      "images/fulls/ttf1.png",
+      "images/fulls/ttf2.png",
+      "images/fulls/ttf3.png"
+    ],
+    "thumbnail_photo": "images/thumbs/tourtofrance.png"
+  }
+]

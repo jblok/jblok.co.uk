@@ -1,0 +1,37 @@
+<!--(bake header.html)-->
+
+  <div id="main">
+    <section id="work-item">
+      <header class="major">
+        <h2>{{work_item.title}}</h2>
+      </header>
+
+      {{work_item.description}}
+
+      <ul class="actions">
+        <!--(bake-start _if="work_item.url")-->
+        <li><a href="{{work_item.url}}" target="_blank" class="button special icon fa-external-link">Visit</a></li>
+        <!--(bake-end)-->
+        <!--(bake-start _if="!work_item.url")-->
+        <div class="button disabled icon fa-external-link">Visit</div>
+        <p>This project is from {{work_item.date}} and isn't actually live anymore :( Soz.</p>
+        <!--(bake-end)-->
+      </ul>
+
+      <h3>Behind the scenes:</h3>
+      <ul class="alt">
+        <!--(bake work_skill.html _foreach="skill:work_item.skills")-->
+      </ul>
+
+      <!--(bake-start _if="work_item.photos")-->
+      <h3>Photos</h3>
+      <!--(bake-end)-->
+      <!--(bake work_photo.html _if="work_item.photos" _foreach="photo:work_item.photos")-->
+    </section>
+
+    <section id="back">
+      <a href="{{base_url}}/#recent" class="button small icon fa-arrow-left">All portfolio items</a>
+    </section>
+  </div>
+
+<!--(bake footer.html)-->
