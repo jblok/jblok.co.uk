@@ -2,3 +2,4 @@
 backup
 build
 node_modules
+.gitignore
