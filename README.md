@@ -11,10 +11,16 @@ To try this yourself with your own content/front-end follow the below instructio
 ### Build Instructions
 
 1) Clone the repo
+
 2) Run `npm install` to install dependencies
+
 3) Define your projects in work.json
-4) Run `grunt`
-5) In a browser, navigate to the build folder in the directory you cloned to.
+
+4) Change your base directory in Gruntfile.js
+
+5) Run `grunt`
+
+6) In a browser, navigate to the build folder in the directory you cloned to.
 
 
 Front end adapted from Strata template by HTML5 UP (html5up.net | @n33co)
