@@ -1,5 +1,11 @@
-<article class="6u 12u(xsmall) work-item">
-  <a href="work/{{work_item.name}}.html" class="image fit thumb"><img src="{{work_item.thumbnail_photo}}" alt="" /></a>
-  <h3>{{work_item.title}}</h3>
-  <p>{{work_item.short_description}}</p>
+<article class="work-item">
+  <a href="work/{{work_item.name}}.html">
+    <div class="image fit">
+      <img src="{{work_item.thumbnail_photo}}" alt="" />
+    </div>
+    <div class="work-item-copy">
+      <h3>{{work_item.title}}</h3>
+      <p>{{work_item.short_description}}</p>
+    </div>
+  </a>
 </article>
