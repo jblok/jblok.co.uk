@@ -5,15 +5,22 @@
         <li><a href="https://www.linkedin.com/profile/view?id=120448232" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
         <li><a href="mailto:jonathon@jblok.co.uk" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
       </ul>
-      <p class="credit">This site was generated with grunt-bake. <br><a href="http://www.github.com/jblok">View source <i class="icon fa-github"></i></a></p>
+      <p class="credit">This site was generated with grunt-bake. <br>
+        <a target="_blank" href="https://github.com/jblok/jblok.co.uk">View source <i class="icon fa-github"></i></a>
+      </p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="{{base_url}}/assets/js/jquery.min.js"></script>
-    <script src="{{base_url}}/assets/js/skel.min.js"></script>
-    <script src="{{base_url}}/assets/js/util.js"></script>
-    <!--[if lte IE 8]><script src="{{base_url}}/assets/js/ie/respond.min.js"></script><![endif]-->
-    <script src="{{base_url}}/assets/js/main.js"></script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39221265-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
 
   </body>
 </html>

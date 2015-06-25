@@ -26,7 +26,7 @@
     "name": "wmcu",
     "title": "Wrap My Chicks Up",
     "url": "http://www.wrapmychicksup.com",
-    "short_description": "An easter themed HTML5 fully responsive game.",
+    "short_description": "A fully responsive easter themed HTML5 game.",
     "description": "<p>This was an HTML5 game we produced at Super natural for Easter. The game is fully responsive and works on all devices, even down to Android 2.3 and IE8! This was a major requirement of the project as we wanted to push the boundaries of the browser and see what could be produced in an HTML only environment.</p><p>The game preloads efficiently and utilises best practices including concatenation, minification, image compression, and has an automated build and deployment system using Grunt.</p>",
     "date": "April 2014",
     "skills": [

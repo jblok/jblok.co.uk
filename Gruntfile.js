@@ -1,7 +1,7 @@
 module.exports = function(grunt){
 
-  // define th url the site is being deployed to - used for defining resource paths
-  var base_url = "http://web.dev/jblok.co.uk-new/build";
+  // define the url the site is being deployed to - used for defining resource paths
+  var base_url = "http://192.168.0.5/jblok.co.uk-new/build";
 
   // get the work data from external json file
   var work = grunt.file.readJSON("work.json");
@@ -37,7 +37,8 @@ module.exports = function(grunt){
     sass: {
       default: {
         options: {
-          sourcemap: "none"
+          sourcemap: "none",
+          style: "compressed"
         },
         files: {
           'build/assets/css/main.css': 'src/assets/sass/main.scss',
@@ -89,9 +90,14 @@ module.exports = function(grunt){
   });
 
 
-  //define deployment task, and watch task maybe?
-  // repoint domain dns to DO server
-  // commit to git repo and add link in footer
+  // define deployment task, and watch task maybe?
+  // make sure all copy is written - wearesupernatural isnt
+  // repoint domain dns to DO server and setup new virtual host on DO
+  // minify css and compress pngs/jpgs
+  // mobile external link button is a bit wierd
+  // work out how to detect environment and set base_url up top
+  // vendor prefix your shadows and transitions and things
+  // (optional) buttons to get shadow on hover like work items
   // (optional) change/obscure css and javascript
 
   // console.log(grunt_config.bake);
@@ -103,6 +109,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-ssh-deploy');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-bake');
 
   grunt.registerTask( "default", tasks);

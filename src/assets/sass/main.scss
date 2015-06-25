@@ -21,26 +21,6 @@
 		xsmall: '(max-width: 480px)'
 	));
 
-	// @include skel-layout((
-	// 	reset: 'full',
-	// 	boxModel: 'border',
-	// 	grid: ( gutters: 2.5em ),
-	// 	conditionals: true,
-	// 	containers: true,
-	// 	breakpoints: (
-	// 		large: (
-	// 			grid: (
-	// 				gutters: 2em
-	// 			),
-	// 		),
-	// 		small: (
-	// 			grid: (
-	// 				gutters: 1.5em
-	// 			),
-	// 		)
-	// 	)
-	// ));
-
 	$size-header-width: 30%;
 	$size-header-pad: 3.5em;
 
@@ -105,7 +85,7 @@ body, html {
 
 		&:hover {
 			border-bottom-color: transparent;
-			color: _palette(accent1, bg) !important;
+			color: _palette(accent1, bg);
 			text-decoration: none;
 		}
 	}
@@ -231,6 +211,10 @@ body, html {
 
 	.align-right {
 		text-align: right;
+	}
+
+	.no-wrap {
+		white-space: nowrap;
 	}
 
 /* Section/Article */
@@ -596,8 +580,8 @@ body, html {
 		display: inline-block;
 		font-weight: _font(weight-bold);
 		height: 3.15em;
-		height: calc(2.75em + 6px);
-		line-height: 2.75em;
+		// height: calc(2.75em + 6px);
+		line-height: 3em;
 		min-width: 10em;
 		padding: 0 1.5em;
 		text-align: center;
@@ -705,6 +689,7 @@ body, html {
 			font-size: 0.8em;
 			line-height: 1.5em;
 			margin: 0;
+			color: #788B93;
 		}
 	}
 
@@ -729,6 +714,10 @@ body, html {
 		box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.2);
 		border-radius: 15px;
 		padding: 2em;
+
+		.icon {
+			margin-right: 10px;
+		}
 	}
 
 /* Header */
@@ -760,9 +749,14 @@ body, html {
 
 		h1 {
 			color: _palette(accent2, fg);
-			font-size: 1.35em;
-			line-height: 1.75em;
+			font-size: 1.7em;
+			line-height: 1.35em;
 			margin: 0;
+		}
+
+		a,
+		a:hover {
+			color: white;
 		}
 
 		.image.avatar {
@@ -772,7 +766,7 @@ body, html {
 
 		.my-info {
 			color: white;
-			margin-top: 3em;
+			margin-top: 4em;
 
 			li {
 				color: white;
@@ -802,6 +796,11 @@ body, html {
 			a {
 				color: _palette(accent2, fg-light);
 			}
+		}
+
+		a,
+		a:hover{
+			color: white;
 		}
 
 		.credit {
@@ -841,8 +840,8 @@ body, html {
 	#main {
 		margin-left: $size-header-width;
 		max-width: 50em + $size-header-pad;
-		padding: $size-header-pad $size-header-pad $size-header-pad $size-header-pad;
-		width: calc(100% - #{$size-header-width});
+		padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
+		// width: calc(100% - #{$size-header-width});
 
 		> section {
 			// border-top: solid 2px _palette(border);
@@ -911,7 +910,6 @@ body, html {
 				width: 30%;
 
 				h1 {
-					font-size: 1.25em;
 
 					br {
 						display: none;
@@ -980,14 +978,13 @@ body, html {
 				background-position:	top left,	center center;
 				background-size:		auto,		cover;
 				left: auto;
-				padding: ($size-header-pad * 1.5) $size-header-pad;
+				// padding: ($size-header-pad * 1.5) $size-header-pad $size-header-pad $size-header-pad;
 				position: relative;
 				text-align: center;
 				top: auto;
 				width: 100%;
 
 				h1 {
-					font-size: 1.75em;
 
 					br {
 						display: inline;
@@ -1009,6 +1006,7 @@ body, html {
 				position: relative;
 				text-align: center;
 				width: 100%;
+				margin-top: 3.5em;
 
 				.icons {
 					margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -1090,11 +1088,7 @@ body, html {
 		/* Header */
 
 			#header {
-				padding: ($size-header-pad * 1.5) $size-header-pad;
-
-				h1 {
-					font-size: 1.35em;
-				}
+				// padding: ($size-header-pad * 1.5) $size-header-pad;
 			}
 
 		/* Footer */
@@ -1145,6 +1139,7 @@ body, html {
 						> * {
 							margin: 0 !important;
 							width: 100%;
+							box-sizing: border-box;
 
 							&.icon {
 								&:before {
@@ -1169,7 +1164,7 @@ body, html {
 		/* Header */
 
 			#header {
-				padding: ($size-header-pad * 3) $size-header-pad;
+				// padding: ($size-header-pad * 3) $size-header-pad;
 
 				h1 {
 					br {

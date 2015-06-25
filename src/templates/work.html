@@ -18,13 +18,15 @@
         <!--(bake-end)-->
       </ul>
 
-      <h3>Behind the scenes:</h3>
+      <br>
+      <h3><i class="icon fa-terminal"></i> Behind the scenes:</h3>
       <ul class="alt">
         <!--(bake work_skill.html _foreach="skill:work_item.skills")-->
       </ul>
 
       <!--(bake-start _if="work_item.photos")-->
-      <h3>Photos</h3>
+      <br>
+      <h3><i class="icon fa-camera"></i> Photos</h3>
       <!--(bake-end)-->
       <!--(bake work_photo.html _if="work_item.photos" _foreach="photo:work_item.photos")-->
     </section>
