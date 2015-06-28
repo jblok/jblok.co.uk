@@ -1,5 +1,5 @@
 .sass-cache
-backup
+secret.json
 build
 node_modules
 .gitignore

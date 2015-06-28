@@ -47,7 +47,7 @@
     "title": "Super natural website",
     "url": "http://www.wearesupernatural.com",
     "short_description": "Upgrade and redesign of existing company wordpress site.",
-    "description": "<p>This is the long description</p>",
+    "description": "<p>As one of my first projects at Super natural, I took the existing company website and pimped it out. I made it responsive, updated the styles based on new designs, added an interactive video header on the homepage, and improved SEO.</p><p>I also greatly improved the site load time and weight. The initial version of the site loaded in far too many unused resources (like a lot of Wordpress sites unfortunately) so by reducing requests, refactoring some scripts and only loading in images when they were about to be visible, the weight of the homepage went from over 1mb to around 300kb (excluding video).</p>",
     "date": "September 2014",
     "skills": [
       "Initial load weight reduced from over 1mb to 300kb",
@@ -55,7 +55,8 @@
       "HTML5",
       "CSS",
       "Javascript / jQuery",
-      "Responsive Web Design"
+      "Responsive Web Design",
+      "SEO"
     ],
     "photos": [
       "images/fulls/supernatural1.png"
@@ -92,12 +93,12 @@
       "Google Maps API"
     ],
     "photos": [
-      "images/fulls/sitchuu1.png",
-      "images/fulls/sitchuu2.png",
-      "images/fulls/sitchuu3.png",
-      "images/fulls/sitchuu4.png",
-      "images/fulls/sitchuu5.png",
-      "images/fulls/sitchuu7.png"
+      "images/fulls/sitchuu1.jpg",
+      "images/fulls/sitchuu2.jpg",
+      "images/fulls/sitchuu3.jpg",
+      "images/fulls/sitchuu4.jpg",
+      "images/fulls/sitchuu5.jpg",
+      "images/fulls/sitchuu7.jpg"
     ],
     "thumbnail_photo": "images/thumbs/sitchuu.png"
   },
@@ -119,6 +120,6 @@
       "images/fulls/ttf2.png",
       "images/fulls/ttf3.png"
     ],
-    "thumbnail_photo": "images/thumbs/tourtofrance.png"
+    "thumbnail_photo": "images/thumbs/tourtofrance.jpg"
   }
 ]

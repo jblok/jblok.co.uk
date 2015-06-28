@@ -1,10 +1,18 @@
 module.exports = function(grunt){
 
   // define the url the site is being deployed to - used for defining resource paths
-  var base_url = "http://192.168.0.5/jblok.co.uk-new/build";
+  var env = grunt.option('env');
+  if (env == "prod"){
+    var base_url = "http://www.jblok.co.uk";
+  }
+  else {
+    var base_url = "http://192.168.0.5/jblok.co.uk-new/build";
+  }
 
   // get the work data from external json file
   var work = grunt.file.readJSON("work.json");
+  var secret = grunt.file.readJSON("secret.json");
+
 
   // set up preset grunt config - bake on index.html, build folder clean and assets copying
   var grunt_config = {
@@ -28,7 +36,7 @@ module.exports = function(grunt){
           {
             expand: true,
             cwd: "src",
-            src: ['assets/css/**', 'assets/fonts/**', 'assets/js/**','images/**', 'LICENSE.txt', 'README.txt'],
+            src: ['assets/css/**', 'assets/js/**','images/fulls/**', 'images/thumbs/**', 'LICENSE.txt', 'README.txt'],
             dest: 'build/'
           },
         ]
@@ -45,26 +53,24 @@ module.exports = function(grunt){
           'build/assets/css/ie8.css': 'src/assets/sass/ie8.scss'
         }
       }
+    },
+    environments: {
+      prod: {
+        options: {
+          local_path: 'build',
+          current_symlink: 'public_html',
+          deploy_path: '/home/admin/web/jblok.co.uk',
+          host: secret.prod.host,
+          port: secret.prod.port,
+          username: secret.prod.username,
+          privateKey: require('fs').readFileSync(secret.prod.privateKey),
+          debug: true,
+          releases_to_keep: '3'
+        }
+      }
     }
-
-    //,
-    // secret: grunt.file.readJSON('secret.json'),
-    // environments: {
-    //   prod: {
-    //     options: {
-    //       local_path: 'dist',
-    //       current_symlink: 'current',
-    //       deploy_path: '/full/path'
-    //       host: '<%= secret.staging.host %>',
-    //       username: '<%= secret.staging.username %>',
-    //       password: '<%= secret.staging.password %>',
-    //       port: '<%= secret.staging.port %>',
-    //       debug: true,
-    //       releases_to_keep: '3'
-    //     }
-    //   }
-    // }
   }
+
 
   // define the tasks to run
   var tasks = [ "clean", "copy", "bake:index", "sass" ];
@@ -90,28 +96,21 @@ module.exports = function(grunt){
   });
 
 
-  // define deployment task, and watch task maybe?
-  // make sure all copy is written - wearesupernatural isnt
-  // repoint domain dns to DO server and setup new virtual host on DO
-  // minify css and compress pngs/jpgs
+  // todos:
   // mobile external link button is a bit wierd
-  // work out how to detect environment and set base_url up top
-  // vendor prefix your shadows and transitions and things
+  // sanity check in ie9
   // (optional) buttons to get shadow on hover like work items
   // (optional) change/obscure css and javascript
+  // (optional) break sass main.scss into seperate modular files (e.g. buttons, work items, etc)
+  // (future) rethink images on single work page - border radius or in computer screen or something
 
-  // console.log(grunt_config.bake);
-  // console.log(tasks);
-
-  grunt.initConfig( grunt_config );
+  grunt.initConfig(grunt_config);
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-ssh-deploy');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-bake');
 
   grunt.registerTask( "default", tasks);
-
 };
