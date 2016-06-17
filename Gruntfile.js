@@ -6,7 +6,7 @@ module.exports = function(grunt){
     var base_url = "http://www.jblok.co.uk";
   }
   else {
-    var base_url = "http://192.168.0.5/jblok.co.uk-new/build";
+    var base_url = "http://localhost:5609/";
   }
 
   // get the work data from external json file
@@ -54,21 +54,21 @@ module.exports = function(grunt){
         }
       }
     },
-    environments: {
-      prod: {
-        options: {
-          local_path: 'build',
-          current_symlink: 'public_html',
-          deploy_path: '/home/admin/web/jblok.co.uk',
-          host: secret.prod.host,
-          port: secret.prod.port,
-          username: secret.prod.username,
-          privateKey: require('fs').readFileSync(secret.prod.privateKey),
-          debug: true,
-          releases_to_keep: '3'
-        }
-      }
-    }
+    // environments: {
+    //   prod: {
+    //     options: {
+    //       local_path: 'build',
+    //       current_symlink: 'public_html',
+    //       deploy_path: '/home/admin/web/jblok.co.uk',
+    //       host: secret.prod.host,
+    //       port: secret.prod.port,
+    //       username: secret.prod.username,
+    //       privateKey: require('fs').readFileSync(secret.prod.privateKey),
+    //       debug: true,
+    //       releases_to_keep: '3'
+    //     }
+    //   }
+    // }
   }
 
 
