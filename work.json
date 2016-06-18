@@ -17,10 +17,11 @@
       "Promises"
     ],
     "photos": [
-      "images/fulls/vinemasher1.png",
-      "images/fulls/vinemasher2.png"
+      "images/fulls/ubeen1.png",
+      "images/fulls/ubeen2.png"
     ],
-    "thumbnail_photo": "images/thumbs/ubeen.jpg"
+    "thumbnail_photo": "images/thumbs/ubeen.jpg",
+    "side_project": true
   },
 
   {
@@ -38,13 +39,14 @@
       "Ruby/Rails",
       "MySQL",
       "Jasmine",
-      "Karma"
+      "Karma",
+      "AWS"
     ],
     "photos": [
       "images/fulls/vinemasher1.png",
       "images/fulls/vinemasher2.png"
     ],
-    "thumbnail_photo": "images/thumbs/vinemasher.jpg"
+    "thumbnail_photo": "images/thumbs/hubbub.jpeg"
   },
 
   {
@@ -52,7 +54,7 @@
     "title": "Tripfix",
     "url": "http://www.tripfixapp.com",
     "short_description": "A travel planning iPhone app built with the Ionic framework.",
-    "description": "<p></p>",
+    "description": "<p>Tripfix is my first foray into the app world, and I decided to go down the Phonegap route, rather than the ObjC/Swift route, because I wanted to see if it was possible to build a decent app with web technologies. Turns out it is possible! Tripfix is built on the Ionic framework which provides a lot of UI niceities and extends the Angular framework.</p><p>It is a fairly simple travel planning app - what you do is choose a city you are planning on travelling to. You are then presented many destinations and points of interest in the city one by one. Using the tinder-esque swiping mechanism you can either discard that place or save it to your phone. By doing that you make a sort of travel itinerary and all information is downloaded in either localStorage or by using the File API in the WebUIView. These caches mean you can access the data when you are abroad travelling!</p><p>To date it's had over 1500 downloads and was featured on Product Hunt. The data comes from a fairly simple Node API which pulls information from a MongoDB database.</p>",
     "date": "February 2016",
     "skills": [
       "Ionic Framework",
@@ -63,17 +65,21 @@
       "Foursquare API"
     ],
     "photos": [
-      "images/fulls/vinemasher1.png",
-      "images/fulls/vinemasher2.png"
+      "images/fulls/tripfix1.jpeg",
+      "images/fulls/tripfix2.jpeg",
+      "images/fulls/tripfix3.jpeg",
+      "images/fulls/tripfix4.jpeg",
+      "images/fulls/tripfix5.jpeg"
     ],
-    "thumbnail_photo": "images/thumbs/tripfix.png"
+    "thumbnail_photo": "images/thumbs/tripfix.png",
+    "side_project": true
   },
 
   {
     "name": "vinemasher",
     "title": "Vine Masher",
     "url": "http://www.vinemasher.com",
-    "short_description": "Turning the famous 6 second video into a new format. A web app built using MEAN stack.",
+    "short_description": "Turning the famous 6 second video into a new format.",
     "description": "<p>Vine Masher is a platform which allows users to stitch together up to 9 seperate vine videos, and trim their start and end times to create a longer, (hopefully) more engaging video. This was a proof of concept project we built at Super natural, but nonetheless it was covered by <a target='_blank' href='http://thenextweb.com/insider/2015/02/02/vine-masher-lets-you-create-easily-shareable-playlists/'>The Next Web</a> and featured on <a target='_blank' href='http://www.producthunt.com/posts/vine-masher'>Product Hunt</a>!</p><p>This app uses AngularJS for the front end javascript framework and LESS as the CSS preprocessor. It taps into the Vine API to request videos from Vine, which users can then drag and drop onto their stage. Users can then authenticate via the Twitter API to create a Vine Masher account and save their Mash.</p><p>Additionally, this app exposes it's own API running on Node.js with a Mongo database, which deals with user authentication and getting or saving mashes. I was also responsible for the server set up and admininstration on Digital Ocean.</p>",
     "date": "February 2015",
     "skills": [
@@ -120,7 +126,6 @@
     "description": "<p>As one of my first projects at Super natural, I took the existing company website and pimped it out. I made it responsive, updated the styles based on new designs, added an interactive video header on the homepage, and improved SEO.</p><p>I also greatly improved the site load time and weight. The initial version of the site loaded in far too many unused resources (like a lot of Wordpress sites unfortunately) so by reducing requests, refactoring some scripts and only loading in images when they were about to be visible, the weight of the homepage went from over 1mb to around 300kb (excluding video).</p>",
     "date": "September 2014",
     "skills": [
-      "Initial load weight reduced from over 1mb to 300kb",
       "Wordpress",
       "HTML5",
       "CSS",

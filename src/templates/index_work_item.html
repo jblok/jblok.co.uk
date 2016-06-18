@@ -6,6 +6,13 @@
     <div class="work-item-copy">
       <h3>{{work_item.title}}</h3>
       <p>{{work_item.short_description}}</p>
+      <div class="work-tags">
+        <!--(bake work_tag.html _foreach="skill:work_item.skills")-->
+
+        <!--(bake-start _if="work_item.side_project")-->
+        <p class="work-tag side-project">Side Project</li>
+        <!--(bake-end)-->
+      </div>
     </div>
   </a>
 </article>
