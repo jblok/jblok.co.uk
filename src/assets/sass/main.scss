@@ -72,7 +72,7 @@ body, html {
 	body, input, select, textarea {
 		color: _palette(fg);
 		font-family: _font(body);
-		font-size: 16pt;
+		font-size: 12pt;
 		font-weight: _font(weight);
 		line-height: 1.75em;
 	}
@@ -383,6 +383,10 @@ body, html {
 
 			img {
 				max-width: 100%;
+
+				.work-item & {
+					width: 100%;
+				}
 			}
 		}
 
@@ -863,7 +867,7 @@ body, html {
 
 	#main {
 		margin-left: $size-header-width;
-		// max-width: 50em + $size-header-pad;
+		max-width: 50em + $size-header-pad;
 		padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
 		// width: calc(100% - #{$size-header-width});
 
