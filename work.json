@@ -25,31 +25,6 @@
   },
 
   {
-    "name": "hubbub",
-    "title": "Hubbub.co.uk",
-    "url": "https://www.hubbub.co.uk",
-    "short_description": "Buy food online from your local producers. Various projects and tasks.",
-    "description": "<p></p>",
-    "date": "2015-2016",
-    "skills": [
-      "React",
-      "SASS",
-      "Webpack",
-      "Grunt",
-      "Ruby/Rails",
-      "MySQL",
-      "Jasmine",
-      "Karma",
-      "AWS"
-    ],
-    "photos": [
-      "images/fulls/vinemasher1.png",
-      "images/fulls/vinemasher2.png"
-    ],
-    "thumbnail_photo": "images/thumbs/hubbub.jpeg"
-  },
-
-  {
     "name": "tripfix",
     "title": "Tripfix",
     "url": "http://www.tripfixapp.com",
@@ -79,7 +54,7 @@
     "name": "vinemasher",
     "title": "Vine Masher",
     "url": "http://www.vinemasher.com",
-    "short_description": "Turning the famous 6 second video into a new format.",
+    "short_description": "Web app to turn the famous 6 second vine into a new format.",
     "description": "<p>Vine Masher is a platform which allows users to stitch together up to 9 seperate vine videos, and trim their start and end times to create a longer, (hopefully) more engaging video. This was a proof of concept project we built at Super natural, but nonetheless it was covered by <a target='_blank' href='http://thenextweb.com/insider/2015/02/02/vine-masher-lets-you-create-easily-shareable-playlists/'>The Next Web</a> and featured on <a target='_blank' href='http://www.producthunt.com/posts/vine-masher'>Product Hunt</a>!</p><p>This app uses AngularJS for the front end javascript framework and LESS as the CSS preprocessor. It taps into the Vine API to request videos from Vine, which users can then drag and drop onto their stage. Users can then authenticate via the Twitter API to create a Vine Masher account and save their Mash.</p><p>Additionally, this app exposes it's own API running on Node.js with a Mongo database, which deals with user authentication and getting or saving mashes. I was also responsible for the server set up and admininstration on Digital Ocean.</p>",
     "date": "February 2015",
     "skills": [
