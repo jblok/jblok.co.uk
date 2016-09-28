@@ -63,6 +63,7 @@ module.exports = function(grunt){
           port: secret.prod.port,
           username: secret.prod.username,
           privateKey: require('fs').readFileSync(secret.prod.privateKey),
+          passphrase: "supernatural",
           debug: true,
           releases_to_keep: '3'
         }
