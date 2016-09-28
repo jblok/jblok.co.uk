@@ -26,4 +26,5 @@ To try this yourself with your own content/front-end follow the below instructio
 ### Deploy Instructions
 
 1) Build in prod mode `grunt --env=prod`
+
 2) Deploy `grunt ssh_deploy:prod`
