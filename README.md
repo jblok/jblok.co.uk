@@ -23,4 +23,7 @@ To try this yourself with your own content/front-end follow the below instructio
 6) In a browser, navigate to the build folder in the directory you cloned to.
 
 
-Front end adapted from Strata template by HTML5 UP (html5up.net | @n33co)
+### Deploy Instructions
+
+1) Build in prod mode `grunt --env=prod`
+2) Deploy `grunt ssh_deploy:prod`
