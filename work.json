@@ -1,5 +1,30 @@
 [
   {
+    "name": "eurosport",
+    "title": "Eurosport - Exclusive Events",
+    "url": null,
+    "short_description": "A web app for displaying live events streamed on Eurosport",
+    "description": "<p>This is a web app I built whilst working at The Discovery Channel (Eurosport is a Discovery brand). It is a single page app which uses React to render all the views, and Redux to hold the application state. I decided to build this app using ES6, transpiled by Babel, to take advantage of all the modern language features.</p><p>The app grabs information about all events from a content API and looks to the start time of each event to output the correct component (either a video component, if the event is live, or a 'coming up' poster image otherwise). The user can open the side menu to filter events by sport or competition, or use a text search to find an event with a specific title. User actions such as searches, filtering, or opening a modal are dispatched to the Redux store which changes the state. And since the view is handled with React, changing the DOM is super simple and just requires handing down different parts of this state to props on the relevant components.</p><p>The actual webpage and all static assets are served by a Node/Express server which also does some clever GeoIP lookups to determine if you are in the right country to view the content. Unfortunately this site exists behind a paywall, so screenshots will have to suffice :(</p>",
+    "date": "September 2016",
+    "skills": [
+      "React",
+      "Redux",
+      "Node.js",
+      "ES6",
+      "Express",
+      "Mocha",
+      "SASS",
+      "Webpack"
+    ],
+    "photos": [
+      "images/fulls/eurosport1.png",
+      "images/fulls/eurosport2.png"
+    ],
+    "thumbnail_photo": "images/thumbs/eurosport.jpg",
+    "side_project": false
+  },
+  
+  {
     "name": "ubeen",
     "title": "Ubeen.io",
     "url": "https://ubeen.io",
