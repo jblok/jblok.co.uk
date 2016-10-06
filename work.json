@@ -20,10 +20,10 @@
       "images/fulls/eurosport1.png",
       "images/fulls/eurosport2.png"
     ],
-    "thumbnail_photo": "images/thumbs/eurosport.jpg",
+    "thumbnail_photo": "images/thumbs/eurosport.png",
     "side_project": false
   },
-  
+
   {
     "name": "ubeen",
     "title": "Ubeen.io",
