@@ -1,5 +1,59 @@
 [
   {
+    "name": "efset",
+    "title": "EF SET",
+    "url": "https://www.efset.org",
+    "short_description": "English language testing application for international students.",
+    "description": "<p>I was brought into the compnay Education First as a contract front end developer to work on their home-grown application, EF SET. The team had just completed the move to AWS and the backend systems were fantastic, but the front end had been neglected. I was tasked with rebuilding the legacy front end application from scratch. The application is a test of your English language skills, guiding you through a variety of questions and tasks. At the end you get an accreditation in your English skills.</p><p>This app was built to be configurable, and the behaviour could be changed in hundreds of different ways based on the configuration passed in. To allow for this, I built many small React components, where any configurability could be tested in isolation. I also built a system wherby different themes could be loaded on demand. My brief was to build a like for like replacement with the existing design, however there were also designs for the future and I built these as part of a seperate theme that could be easily switched to, once it had been completed.</p><p>Redux was crucial for this application, as there was so much state to handle. I split the store among multiple reducers, each with a seperate area of responsibility. For example, there was the timer reducer (as tests are all time limited), and another handling the users session, plus others.</p><p>I was the sole front end developer working on this project, responsible for making architecture decisions, setting up the entire build and deploy process, and setting up unit testing. The web app is React/Redux based, entirely client side rendered, and unit tested with Enzyme, Mocha and Karma. Builds are handled by Jenkins and I used Docker and nginx to deploy and serve the application.</p><p>The application is now live and in use by around 500,000 people every month. As a bonus, this application is now much more leightweight than it's predecessor. It now weighs 150kb rather than 800kb!</p>",
+    "date": "March 2017",
+    "skills": [
+      "React",
+      "Redux",
+      "ES6",
+      "Babel",
+      "Webpack",
+      "Webpack",
+      "SASS",
+      "Docker",
+      "Mocha",
+      "Enzyme",
+      "Jenkins",
+      "Karma",
+      "Git Flow"
+    ],
+    "photos": [
+      "images/fulls/efset1.png",
+      "images/fulls/efset2.png"
+    ],
+    "thumbnail_photo": "images/thumbs/efset.png",
+    "side_project": false,
+    "recent": true
+  },
+
+  {
+    "name": "dongledaddy",
+    "title": "Dongle Daddy",
+    "url": "https://www.dongledaddy.com",
+    "short_description": "A tool to help you find the right cables to connect your devices.",
+    "description": "<p>Dongle Daddy is an idea I had for a helpful litte web app. It helps people who are less technically able, and who don't know what cable they need to connect one device to another. <a href='https://www.dongledaddy.com'>Try it out</a> for yourself to see how it works. After asking some questions about the users device and the ports on that device, it consults it's matrix of cables and ports to suggest the correct cable (with a link to Amazon or BT Shop to buy it).</p><p>Upon launching, Dongle Daddy was featured heavily across the internet, appearing on multiple tech blogs such as <a href='https://thenextweb.com/apps/2017/01/20/send-your-parents-this-link-the-next-time-they-ask-which-cables-to-use/#.tnw_sEL2LYxj'>The Next Web</a>, and it hit the dizzying heights of position 17 on the front page of Hacker News. People have commented that they have ended up with the right cable thanks to the site!</p><p>I set out to build this app with performance in mind, therefore I aimed for a tiny bundle size. I used Preact, a 3kb alternative to React. It has the same API as React which means I already knew how to use it, but it saves around 40kb compared to React. I used stateful components rather than a flux implementation for simplicity, and as Dan Abramov says, <a href='https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367'>you don't always need Redux!</a></p><p>The other part of this application is an API, built with Node, which returns the correct link to a product on Amazon or BT Shop based on the users region and the cable required. I built this as a seperate server so all the link data doesn't have to go into the javascript bundle.",
+    "date": "January 2017",
+    "skills": [
+      "Preact",
+      "ES6",
+      "Babel",
+      "Webpack",
+      "Node.js",
+      "SASS"
+    ],
+    "photos": [
+      "images/fulls/dongledaddy1.png"
+    ],
+    "thumbnail_photo": "images/thumbs/dongledaddy.png",
+    "side_project": true,
+    "recent": true
+  },
+
+  {
     "name": "eurosport",
     "title": "Eurosport - Exclusive Events",
     "url": null,
@@ -21,7 +75,8 @@
       "images/fulls/eurosport2.png"
     ],
     "thumbnail_photo": "images/thumbs/eurosport.png",
-    "side_project": false
+    "side_project": false,
+    "recent": true
   },
 
   {
@@ -46,7 +101,8 @@
       "images/fulls/ubeen2.png"
     ],
     "thumbnail_photo": "images/thumbs/ubeen.jpg",
-    "side_project": true
+    "side_project": true,
+    "recent": true
   },
 
   {

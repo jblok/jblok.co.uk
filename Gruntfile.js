@@ -21,7 +21,8 @@ module.exports = function(grunt){
         options: {
           content: {
             base_url: base_url,
-            work_items: work
+            recent_work_items: work.filter(item => item.recent),
+            less_recent_work_items: work.filter(item => !item.recent)
           }
         },
         files: {
@@ -62,8 +63,7 @@ module.exports = function(grunt){
           host: secret.prod.host,
           port: secret.prod.port,
           username: secret.prod.username,
-          privateKey: require('fs').readFileSync(secret.prod.privateKey),
-          passphrase: "supernatural",
+          password: secret.prod.password,
           debug: true,
           releases_to_keep: '3'
         }

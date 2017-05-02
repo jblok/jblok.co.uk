@@ -4,7 +4,14 @@
 		<section class="no-bg" id="recent">
 			<h2>Recent Work</h2>
 			<div class="row">
-				<!--(bake templates/index_work_item.html _foreach="work_item:work_items")-->
+				<!--(bake templates/index_work_item.html _foreach="work_item:recent_work_items")-->
+			</div>
+
+			<br><br>
+
+			<h2>Less Recent Work (1 year+)</h2>
+			<div class="row">
+				<!--(bake templates/index_work_item.html _foreach="work_item:less_recent_work_items")-->
 			</div>
 		</section>
 	</div>

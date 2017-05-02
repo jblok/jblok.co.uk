@@ -20,7 +20,7 @@ To try this yourself with your own content/front-end follow the below instructio
 
 5) Run `grunt`
 
-6) In a browser, navigate to the build folder in the directory you cloned to.
+6) Run `npm start` to start a server locally on port 5609.
 
 
 ### Deploy Instructions
