@@ -10,21 +10,20 @@ To try this yourself with your own content/front-end follow the below instructio
 
 ### Build Instructions
 
-1) Clone the repo
+1. Clone the repo
 
-2) Run `npm install` to install dependencies
+2. Run `npm install` to install dependencies
 
-3) Define your projects in work.json
+3. Define your projects in work.json
 
-4) Change your base directory in Gruntfile.js
+4. Change your base directory in Gruntfile.js
 
-5) Run `grunt`
+5. Run `grunt`
 
-6) Run `npm start` to start a server locally on port 5609.
-
+6. Run `npm start` to start a server locally on port 5609.
 
 ### Deploy Instructions
 
-1) Build in prod mode `grunt --env=prod`
+1. Build in prod mode `grunt --env=prod`
 
-2) Deploy `grunt ssh_deploy:prod`
+2. Deploy `build` folder to Netlify
